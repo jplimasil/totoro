@@ -1,0 +1,206 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA7az7AK+ygQDxbXoA/4mOAL1DTQCQMDoA8ZCUAPnL/wD9jZQAGxBgAFLL/wD/i5IA6oGOAP/03wDsiP8A99X9AP+9xAD7io0AW8v/AORl/wD7iZAA/YmQALNfZABhzv8A8Jf/APz/uQD/3QcAUgVmAFYGYwD7xP0A7Y/+APnV/wD0qf8A/4ePAFoXVQBSzP8A7pj+AK6xgAD/i5UA9LX/APqHkABSCmoA/IeQAOZj/wBIBWAAXs//AO6o+wD0vv8AVmzLAPHEzQCPMTwA9r7/APiHkQBNBmYA/IqRAEoMZgDQR08AUg1KAPyIjwDoZP4ATgdkAOhn/gDhcfsA/OL/APBsfADwn/4A/4iQAOZn/wDfefYATwZoAM5HUQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJgICAgICAiYAAAAAAAAXKSspNSkrDRoaHQAAAAAADkUtOC4YRjoaG0cAAAAAAAAAEzEKJAs/PTIDAAAAAAAANypDB0NDQxIAAAAAAAAAAEMPHyVEREQWMwAAAAAAAAAEFBlCAUREOyMGNgAAAAAABBk8ISgeRCJBBj0AAAAAAARELz4wCBAVQQUcAAAAAAAEREQ0LCBAQ0E5AAAAAAAAEUMMQwlDQydBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA8A8AAMAHAADABwAA8AcAAOAfAADgDwAA4AMAAOADAADgAwAA4AcAAOAPAAD//wAA//8AAP//AAA="
+        rel="icon" type="image/x-icon" />
+    <style>
+        * {
+            margin: 0;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: aliceblue;
+            padding: 5px;
+            font-size: 30px;
+        }
+
+        body {
+            margin: 0;
+            display: block;
+            height: auto;
+            background-color: #9e0202;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .cont {
+            top: 30%;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            width: 400;
+            height: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75%;
+        }
+
+        .btn {
+            display: inline-block;
+            position: fixed;
+            width: 40px;
+            height: 22px;
+            left: 50%;
+            top: 80%;
+            text-align: center;
+        }
+
+
+        .no {
+            width: 100px;
+            height: 40px;
+        }
+
+        #by {
+            top: 80%;
+            left: 20%;
+            display: block;
+            width: 100px;
+            position: absolute;
+
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            display: block;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .mg {
+            margin-bottom: 30px;
+        }
+
+        .geral {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75%;
+        }
+
+        footer {
+            font-size: 1.2rem;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #6b0000;
+            color: #fff;
+        }
+    </style>
+    <title>Apenas a ponta da glock</title>
+</head>
+
+<body>
+    <div class="geral">
+        <div class="cont">
+            <div class="mg">
+                <img src="arcary.webp"
+                    alt="emojo pedindo">
+                <h1>Cuzinho hoje? &#x1F97A</h1>
+            </div>
+            <div id="By">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <input class="no" type="button" value="Sim"/>
+                </a>
+            </div>
+            <div ID="Bn" class="btn">
+                <input class="no" type="button" value="Não" onMouseOver="f()" />
+            </div>
+        </div>
+        <footer>☭ By Jão ☭</footer>
+        <script>
+            const btn = document.getElementById('Bn');
+            let flag = 1;
+
+            function moveButton(top, left) {
+                btn.style.top = `${top}px`;
+                btn.style.left = `${left}px`;
+            }
+
+            function f() {
+                switch (flag) {
+                    case 1:
+                        moveButton(364, 300);
+                        flag = 2;
+                        break;
+                    case 2:
+                        moveButton(476, 78);
+                        flag = 3;
+                        break;
+                    case 3:
+                        moveButton(358, 147);
+                        flag = 4;
+                        break;
+                    case 4:
+                        moveButton(490, 134);
+                        flag = 5;
+                        break;
+                    case 5:
+                        moveButton(234, 150);
+                        flag = 6;
+                        break;
+                    case 6:
+                        moveButton(441, 245);
+                        flag = 7;
+                        break;
+                    case 7:
+                        moveButton(345, 158);
+                        flag = 8;
+                        break;
+                    case 8:
+                        moveButton(390, 165);
+                        flag = 9;
+                        break;
+                    case 9:
+                        moveButton(231, 349);
+                        flag = 10;
+                        break;
+                    case 10:
+                        moveButton(123, 289);
+                        flag = 11;
+                        break;
+                    case 11:
+                        moveButton(259, 109);
+                        flag = 12;
+                        break;
+                    case 12:
+                        moveButton(300, 170);
+                        flag = 13;
+                        break;
+                    case 13:
+                        moveButton(267, 120);
+                        flag = 14;
+                        break;
+                    case 14:
+                        moveButton(126, 170);
+                        flag = 15;
+                        break;
+                    case 15:
+                        moveButton(298, 347);
+                        flag = 16;
+                        break;
+                    case 16:
+                        moveButton(345, 165);
+                        flag = 2;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+        </script>
+</body>
+
+</html>
